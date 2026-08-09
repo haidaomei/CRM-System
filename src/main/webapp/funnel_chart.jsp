@@ -103,11 +103,7 @@
 	<c:if test="${not empty funnelJson and funnelJson != '[]'}">
 		<script>
 			(function() {
-				var data = $
-				{
-					funnelJson
-				}
-				;
+				var data = ${funnelJson};
 				QihangFunnel.create(document.getElementById("funnel"), data, {
 					metric : "value"
 				});

@@ -239,11 +239,7 @@
 	<c:if test="${not empty funnelJson and funnelJson != '[]'}">
 		<script>
 			(function() {
-				var d = $
-				{
-					funnelJson
-				}
-				;
+				var d = ${funnelJson};
 				QihangFunnel.create(document.getElementById('funnel'), d);
 			})();
 		</script>
